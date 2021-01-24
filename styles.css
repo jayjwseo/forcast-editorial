@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+}
+
+#btw-edt {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+.grid-wrapper-top-edt {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 0.785fr 0.785fr 1fr;
+  grid-template-areas:
+    "f f p1 p2"
+    "f f t t"
+    "t2 t2 f2 f2"
+    "p3 p4 f2 f2";
+}
+
+.grid-wrapper-bot-edt {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.795fr 1fr;
+  grid-template-areas:
+    "f3 f3 t3 t3"
+    "f3 f3 p5 p6";
+}
+
+.feature-sub-edt.content-edt {
+  margin-top: 1rem;
+}
+
+.feature-sub-edt-2.content-edt {
+  margin-bottom: 1rem;
+}
+
+.cta-edt {
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.cta-edt-btn {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 0.4rem 1.3rem;
+  border-radius: 4px;
+}
+
+.cta-edt-btn:hover {
+  text-shadow: 0.5px 0 0 white;
+}
+
+.caption-main-edt,
+.caption-sub-edt {
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  line-height: 2.5rem;
+  padding: 3rem 12%;
+}
+
+.content-edt {
+  display: block;
+}
+
+.text-edt {
+  padding: 0 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.05rem;
+  line-height: 2.5rem;
+}
+
+#btw-edt img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.mobile-show-edt {
+  display: none;
+}
+
+.mobile-hide-edt {
+  display: block;
+}
+
+.f-edt {
+  grid-area: f;
+}
+.f-2-edt {
+  grid-area: f2;
+}
+.f-3-edt {
+  grid-area: f3;
+}
+.t-edt {
+  grid-area: t;
+}
+.t-2-edt {
+  grid-area: t2;
+}
+.t-3-edt {
+  grid-area: t3;
+}
+.p-1-edt {
+  grid-area: p1;
+}
+.p-2-edt {
+  grid-area: p2;
+}
+.p-3-edt {
+  grid-area: p3;
+}
+.p-4-edt {
+  grid-area: p4;
+}
+.p-5-edt {
+  grid-area: p5;
+}
+.p-6-edt {
+  grid-area: p6;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-wrapper-top-edt {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas:
+      "f f"
+      "f f"
+      "t t"
+      "p1 p2"
+      "f2 f2"
+      "f2 f2"
+      "t2 t2"
+      "p3 p4";
+  }
+
+  .grid-wrapper-bot-edt {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "f3 f3"
+      "f3 f3"
+      "t3 t3"
+      "p5 p6";
+  }
+
+  .caption-main-edt,
+  .caption-sub-edt {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .text-edt {
+    height: auto;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.05rem;
+    line-height: 2.5rem;
+  }
+
+  .mobile-show-edt {
+    display: block;
+  }
+
+  .mobile-hide-edt {
+    display: none;
+  }
+}
